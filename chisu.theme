@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Component\Utility\Xss;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\file\FileInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ */
+function chisu_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+}
+
+/**
+ * Puts the file type and size
+ */
+function chisu_preprocess_file_link(&$variables) {
+  $file = $variables['file'] ?? NULL;
+  if ($file instanceof FileInterface) {
+    $variables['size'] = format_size($file->getSize());
+    $extension = pathinfo($file->getFilename(), PATHINFO_EXTENSION);
+    $variables['type'] = strtoupper($extension);
+  }
+  $variables['link']['#attributes']['target'] = '_blank';
+}
+
+/**
+ * @param $variables
+ */
+function chisu_preprocess_page(&$variables) {
+
+  if (\Drupal::routeMatch()->getRouteName() == 'view.search.page_1') {
+    /**
+     * Search query available as TWIG token
+     */
+    if (isset($_GET['keys'])) {
+      $variables['get']['keys'] = XSS::filter($_GET['keys']);
+    }
+  }
+
+}

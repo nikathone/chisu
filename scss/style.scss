@@ -1,0 +1,805 @@
+// Default variablesfooter
+@import "default-variables";
+
+// Bootstrap Framework.
+@import "../../../vendor/twbs/bootstrap/scss/bootstrap.scss";
+
+// CHISU Color Palette
+
+.background-none {background: none !important;}
+.background-white {background-color: $color-white !important;}
+.text-white {color: $color-white !important;}
+.background-white-0 {background: rgba(255,255,255,0.92);}
+.background-black {background-color: $color-black !important;}
+.background-black-0 {background: rgba(55,67,75,0.7);}
+.text-black {color: $color-black !important;}
+.background-gray {background-color: $color-gray !important;}
+.background-dark-gray {background-color: $color-dark-gray !important;}
+.text-dark-gray {color: $color-dark-gray !important;}
+.background-sky-blue {background-color: $color-sky-blue !important;}
+.background-blue {background-color: $color-blue !important;}
+.background-blue-50 {background-color: $color-blue-50 !important;}
+.background-blue-25 {background-color: $color-blue-25 !important;}
+.text-blue {color: $color-blue !important;}
+.background-green {background-color: $color-green !important;}
+.background-green-50 {background-color: $color-green-50 !important;}
+.background-green-25 {background-color: $color-green-25 !important;}
+.background-brown {background-color: $color-brown !important;}
+.background-tan {background-color: $color-tan !important;}
+.background-tan-50 {background-color: $color-tan-50 !important;}
+.background-tan-25 {background-color: $color-tan-25 !important;}
+
+// Begin Other CSS
+
+body {
+  background-image: linear-gradient(40deg, rgba(85, 165, 90,0.2) 0%, rgba(85, 165, 90,0.1) 13%,transparent 13%, transparent 82%,rgba(44, 160, 195,0.1) 80%, rgba(44, 160, 195,0.15) 100%),linear-gradient(30deg, rgba(198, 185, 172,0.1) 0%, rgba(198, 185, 172,0.1) 36%,transparent 36%, transparent 77%,rgba(198, 185, 172,0.1) 77%, rgba(123, 105, 87,0.1) 100%),linear-gradient(310deg, rgba(83, 147, 206,0.2) 0%, rgba(83, 147, 206,0.1) 15%,transparent 2%, transparent 12%,rgba(255, 255, 255,0.1) 12%, rgba(255, 255, 255,0.1) 100%),linear-gradient(55deg, rgba(198, 185, 172,0.1) 0%, rgba(198, 185, 172,0.1) 23%,transparent 18%, transparent 65%,rgba(123, 105, 87,0.05) 55%, rgba(123, 105, 87,0.05) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255)); min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body, .site-footer {font-family: $gill-sans;}
+body {font-size: 1.071em;}
+.variex {font-family: $variex !important;}
+.montserrat {font-family: $montserrat !important;}
+
+a, .leaflet-container a {
+  color: $color-brown;
+}
+
+a:hover, a:focus {
+  color: $color-brown;
+}
+
+.field--name-body a, .view-content a, .file a, .field--type-link a {
+  background: $color-green-10;
+  padding-bottom: 0.15rem;
+  text-decoration: underline;
+  text-decoration-color: $color-green-50;
+}
+
+.field--name-body a:hover, .view-content a:hover, .file a:hover, .field--type-link a:hover {
+  text-decoration-color: $color-brown;
+}
+
+.field--name-body a.text-white:hover, .view-content a.text-white:hover, .file a.text-white:hover, .field--type-link a.text-white:hover {
+  text-decoration-color: $color-white;
+}
+
+.leaflet-control-zoom a {
+  text-decoration: none;
+}
+
+.lead a, a.lead {
+  background: none;
+  padding: 0;
+}
+
+b, strong, .font-weight-bold {
+  font-weight: 700;
+}
+
+.display-4 {
+  font-size: 2rem;
+}
+
+.display-3 {
+  font-size: 3rem;
+}
+
+svg.ext {
+  width: 19px;
+  height: 17px;
+  padding-right: 0;
+  fill: $color-tan;
+  margin-top: -10px;
+  font-weight: 400;
+  padding-left: 0.15rem;
+}
+
+h1, h2, h3, h4, h5 {font-weight: 700; line-height: 1.2; font-family: $montserrat; color: $color-blue;}
+h1 {font-size: 2.5rem;}
+h2 {font-size: 1.8rem;}
+h3 {font-size: 1.5rem;}
+h4 {font-size: 1.1rem;}
+h5 {font-size: 1rem;}
+
+.lead {font-weight: 400; font-size: 1.35rem; line-height: 1.35;}
+.small, small {font-size: 85%;}
+
+.border-primary {
+  border-color: $color-tan-50 !important;
+}
+
+.border-secondary {
+  border-color: $color-blue-50 !important;
+}
+
+.border-light {
+  border-color: $color-green-50 !important;
+}
+
+.rounded {
+  border-radius: 0.15rem !important;
+}
+
+.views-row.border-bottom:last-child {
+  border-bottom: none !important;
+}
+
+.btn {
+  border-radius: 0.1rem;
+  text-decoration: none !important;
+  padding: .375rem .75rem !important;
+
+}
+
+.btn-primary {
+  background-color: $color-brown !important;
+  color: $color-white;
+  border-color: $color-brown;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: $color-brown-85 !important;
+  color: $color-white;
+  border-color: $color-brown-85;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem $color-tan-50;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $color-tan-50;
+  background-color: $color-brown-85 !important;
+  color: $color-white;
+  border-color: $color-brown-85;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color: $color-brown-85 !important;
+  color: $color-white;
+  border-color: $color-brown-85;
+}
+
+.btn-light {
+  background-color: $color-green-25 !important;
+  color: $color-black;
+  border-color: $color-green-25;
+}
+
+.btn-light:hover, .btn-light:focus {
+  background-color: $color-green-50 !important;
+  color: $color-black;
+  border-color: $color-green-50;
+}
+
+.btn-light:focus {
+  box-shadow: 0 0 0 0.2rem $color-green-10;
+}
+
+.btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $color-green-10;
+  background-color: $color-green-50 !important;
+  color: $color-black;
+  border-color: $color-green-50;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  background-color: $color-green-10 !important;
+  color: $color-black;
+  border-color: $color-green-50;
+}
+
+.region-top-header {
+  z-index: 1;
+  position: relative;
+}
+
+#block-topmenu .nav {
+  flex-wrap: nowrap;
+}
+
+#block-topmenu .nav .nav-link {
+  color: $color-black;
+  padding: 0.25rem 0;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
+}
+
+#block-topmenu .nav .nav-link:focus, #block-topmenu .nav .nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: .15rem;
+}
+
+#block-chisu-main-menu a.nav-link {
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 1rem;
+  color: $color-black;
+}
+
+#block-chisu-main-menu a.nav-link:hover, #block-chisu-main-menu a.nav-link:focus, #block-topmenu .nav .nav-link:hover, #block-topmenu .nav .nav-link:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  outline: none;
+}
+
+#block-chisu-main-menu a.nav-link.active, #block-topmenu .nav .nav-link.active {
+  color: $color-blue;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  text-decoration-color: $color-blue-50;
+}
+
+#block-chisu-main-menu a.nav-link.active:hover, #block-topmenu .nav .nav-link.active:hover {
+  text-decoration-color: $color-blue;
+  outline: none;
+}
+
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border-color: $color-gray-25;
+  background-color: $color-white;
+  min-width: 200px;
+}
+
+.dropdown-menu:nth-child(2) {
+  width: 280px;
+}
+
+.dropdown-item {
+  padding: 0;
+}
+
+.dropdown-item a {
+  padding: 0.5rem 1rem;
+  color: $color-black;
+  font-size: 1rem;
+  width: 100%;
+  display: block;
+}
+
+.dropdown-item a:hover, .dropdown-item a:focus {
+  background: $color-gray-25;
+  color: $color-black;
+  text-decoration: none;
+}
+
+.dropdown-item a.is-active {
+  color: $color-blue;
+  background: $color-white;
+}
+
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover {
+  background: none;
+  outline: none;
+}
+
+.dropdown-toggle:after, #block-chisu-main-menu .navbar-nav .sub-arrow {
+  display: none;
+}
+
+#block-chisu-main-menu .navbar-nav.sm-collapsible .has-submenu {
+  padding-right: 0.5rem;
+}
+
+.chisu-search img[alt=open] {
+  opacity: 0.5;
+}
+
+.chisu-search:hover img[alt=open], .chisu-search:focus img[alt=open] {
+  opacity: 1;
+}
+
+.chisu-search img[alt=close] {
+  display: none;
+}
+
+.chisu-search.search-block-button-expanded img[alt=close] {
+  z-index: 107;
+  display: block;
+  position: fixed;
+  right: 25%;
+  top: 50%;
+  margin-top: -115px;
+}
+
+.chisu-search.search-block-button-expanded img[alt=close]:hover, .chisu-search.search-block-button-expanded img[alt=close]:focus {
+  filter: brightness(2);
+  outline: none;
+}
+
+#block-exposedformsearchpage-1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(123, 105, 87, 0.85);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translate(0px, -100%) scale(0, 0);
+  -moz-transform: translate(0px, -100%) scale(0, 0);
+  -ms-transform: translate(0px, -100%) scale(0, 0);
+  -o-transform: translate(0px, -100%) scale(0, 0);
+  transform: translate(0px, -100%) scale(0, 0);
+  opacity: 0;
+  display: none;
+}
+
+#block-exposedformsearchpage-1.d-block {
+  -webkit-transform: translate(0px, 0px) scale(1, 1);
+  -moz-transform: translate(0px, 0px) scale(1, 1);
+  -ms-transform: translate(0px, 0px) scale(1, 1);
+  -o-transform: translate(0px, 0px) scale(1, 1);
+  transform: translate(0px, 0px) scale(1, 1);
+  opacity: 1;
+  z-index: 106;
+  display: block;
+}
+
+#views-exposed-form-search-page-1 label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#views-exposed-form-search-page-1 input {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -51px;
+  width: 50%;
+  margin-left: 25%;
+  font-size: 1.75rem;
+  border: none;
+}
+
+button.chisu-search {
+  background: none;
+  border: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+#block-exposedformsearchpage-1 .content button {
+  text-indent: -9999px;
+  background: url(/themes/custom/chisu/images/icon-magnifying-glass.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 0;
+  padding: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  position: absolute;
+  top: -29px;
+  right: 5px;
+}
+
+#block-exposedformsearchpage-1 .content button:focus {
+  box-shadow: none;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: $color-tan;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(198,185,172,0.5);
+}
+
+#block-socialmedia {
+  position: fixed;
+  top: 250px;
+  right: 0;
+  z-index: 499;
+}
+
+#block-socialmedia {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#block-socialmedia .content a {
+  opacity: 0.85;
+  transition: $transition;
+}
+
+#block-socialmedia .content a:focus, #block-socialmedia .content a:hover {
+  opacity: 1;
+}
+
+#block-chisu-breadcrumbs .breadcrumb {
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 85%;
+  margin-left: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.breadcrumb-item+.breadcrumb-item:before {
+  color: $color-tan-50;
+  content: ">";
+  font-family: $variex;
+  font-size: 85%;
+  margin-top: 3px;
+}
+
+.node .field--type-image, .field--type-image img {
+  margin: 0;
+}
+
+img.image-style-resource-thumbnail {
+  border: 1px solid $color-gray-50;
+  box-shadow: 0 0 4px 0 $color-gray-25;
+}
+
+.file {
+  background-position: left 7px;
+}
+
+.caption > figcaption, .caption, .field--name-field-credit {
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: $color-dark-gray;
+  clear: both;
+}
+
+.btn[data-toggle=modal] {
+  text-align: left !important;
+  padding: 0 !important;
+}
+
+.btn[data-toggle=modal]:focus {
+  box-shadow: none !important;
+}
+
+#main>.row {
+  background: rgba(255,255,255,.7);
+  padding: 1.5rem;
+  border-radius: 0.1rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content li:last-child {
+  margin-bottom: 0;
+}
+
+.breadcrumb li {
+  margin-bottom: 0;
+}
+
+.site-footer__bottom {
+  letter-spacing: normal;
+  border: none;
+  margin-top: 0;
+}
+
+.site-footer__bottom .region {
+  margin: 0;
+}
+
+.site-footer__bottom .block {
+  margin: 0;
+}
+
+.site-footer__bottom .content {
+  padding: 0;
+}
+
+.site-footer .content {
+  color: $color-dark-gray;
+  font-size: 90%;
+  line-height: 1.35;
+}
+
+#block-chisu-footer .nav {
+  column-count: 2;
+  display: block;
+}
+
+#block-chisu-footer .nav a {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  color: $color-black;
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.hero {
+  height: 500px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.hero .caption {
+  right: 0;
+  bottom: -1rem;
+}
+
+// Content
+
+.homepage-photo {
+  background-image: url("/sites/default/files/2021-02/rti-mda-tanzania-malaria-patient-50353823652_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 45%;
+  min-height: 600px;
+}
+
+.block-field-blocknodearticlefield-date, .block-field-blocknodenewsfield-date {
+  color: $color-dark-gray;
+  margin-bottom: 0.25rem;
+}
+
+// Alerts
+
+.alert-wrapper .alert {
+  display: flex;
+  align-items: center;
+}
+
+em.placeholder {
+  margin: 0 0.25rem;
+}
+
+.alert-dismissible .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  padding: .75rem 1.25rem;
+}
+
+.alert-dismissible .btn-close:before {
+  content: "X";
+}
+
+.alert-dismissible .btn-close:hover, .alert-dismissible .btn-close:focus {
+  opacity: 1;
+}
+
+.alert-wrapper .alert-success::before {
+  background-position: 0 0.2rem;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $color-white;
+  opacity: 1;
+  font-size: 1rem;
+}
+
+.slick-arrow:before, .slick-dots li button:before {
+  color: $color-green-25;
+  opacity: 1;
+}
+
+.slick-arrow:hover:before, .slick-dots li button:hover:before {
+  color: $color-green-50;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.node figure .field--type-image {
+  float: none;
+}
+
+figure.align-right, figure.align-left, .field--name-body div.align-right, .field--name-body div.align-left {
+  max-width: 50%;
+}
+
+.field--name-body div.align-right, .field--name-body div.align-left, .field--name-body div.align-center {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+figure.align-right, .field--name-body div.align-right {
+  margin-left: 1rem;
+  margin-top: 0.35rem;
+}
+
+figure.align-left, .field--name-body div.align-left {
+  margin-right: 1rem;
+  margin-top: 0.35rem;
+}
+
+figure img {
+  height: auto;
+  max-width: 100%;
+}
+
+.blockquote {
+  padding-left: 1.25rem;
+  border-left: 1px solid $color-dark-gray-50;
+}
+
+.blockquote-footer {
+  color: inherit;
+  font-style: italic;
+}
+
+.page-link {
+  color: $color-brown;
+  border: none;
+  border-radius: 0;
+}
+
+.page-link:hover {
+  color: $color-brown;
+  background: $color-green-25;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.page-item.active .page-link {
+  color: $color-black;
+  background: $color-tan-50;
+  border-color: $color-tan-50;
+}
+
+.views-exposed-form label {
+  font-weight: bolder;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 85%;
+}
+
+// Utilities
+
+.z-index-0 {z-index: 0;}
+.z-index-5 {z-index: 5;}
+
+.view-content-row .view-content.row {margin: 0;} // removes negative margin for view content
+
+#block-searchbutton>.contextual {
+  display: none !important;
+}
+
+// Known IE fixes
+
+.ms-flex-direction-column { // this solves a lot of flex issues with IE 11
+  -ms-flex-direction: column;
+}
+
+// Hover menu
+
+@media (min-width: 1200px) {
+
+  .dropdown:hover .dropdown-menu {display: block;}
+
+}
+
+// Begin Responsive as Defined by Bootstrap 4
+
+@media (min-width: 1199.99px) {
+
+  .navbar-expand-xl .navbar-nav .nav-link {padding-right: 0.75rem; padding-left: 0.75rem;}
+
+  header {max-width: 1600px; margin: 0 auto;}
+  .featured-top .homepage-photo {height: 700px;}
+
+}
+
+@media (max-width: 1199.98px) {
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(109, 110, 113, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .dropdown-menu {background: none; border: none; text-align: center;}
+  .dropdown-menu .dropdown-item:last-child {margin-bottom: 0.5rem;}
+  .dropdown-item a {color: $color-dark-gray;}
+  .dropdown-item a:focus, .dropdown-item a:hover {color: $color-black; background: none; text-decoration: underline; text-underline-offset: 0.25rem; outline: none;}
+  .dropdown-item a.is-active {background: none;}
+  .dropdown-item a.is-active:focus, .dropdown-item a.is-active:hover {outline: none; text-decoration: none; color: $color-blue;}
+
+  #block-chisu-main-menu .navbar-nav {text-align: center; margin-top: 0.75rem;}
+  #views-exposed-form-search-page-1 input {font-size: 1.25rem;}
+  #block-chisu-breadcrumbs .breadcrumb {margin-left: 0;}
+  .hero {height: 400px;}
+
+}
+
+@media (max-width: 991.98px) {
+
+  body {background-image: linear-gradient(60deg, rgba(85, 165, 90,0.2) 0%, rgba(85, 165, 90,0.1) 13%,transparent 13%, transparent 90%,rgba(44, 160, 195,0.1) 80%, rgba(44, 160, 195,0.15) 100%),linear-gradient(60deg, rgba(198, 185, 172,0.1) 0%, rgba(198, 185, 172,0.1) 20%,transparent 36%, transparent 83%,rgba(198, 185, 172,0.1) 77%, rgba(123, 105, 87,0.1) 100%),linear-gradient(290deg, rgba(83, 147, 206,0.2) 0%, rgba(83, 147, 206,0.1) 8%,transparent 2%, transparent 12%,rgba(255, 255, 255,0.1) 12%, rgba(255, 255, 255,0.1) 100%),linear-gradient(60deg, rgba(198, 185, 172,0.1) 0%, rgba(198, 185, 172,0.1) 17%,transparent 16%, transparent 76%,rgba(123, 105, 87,0.05) 60%, rgba(123, 105, 87,0.05) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255)); min-height: 100vh;}
+
+  #views-exposed-form-search-page-1 input {font-size: 1rem; width: 60%; margin-left: 20%;}
+  .chisu-search.search-block-button-expanded img[alt=close] {right: 20%;}
+  .display-4 {font-size: 1.5rem;}
+  .display-3 {font-size: 2.5rem;}
+  .homepage-photo {min-height: 500px;}
+
+
+}
+
+@media (min-width: 768px) {
+
+  .site-footer .offset-md-1 {margin-left: 8.33333% !important;}
+
+}
+
+@media (max-width: 767.98px) {
+
+  #views-exposed-form-search-page-1 input {width: 90%; margin-left: 5%;}
+  .chisu-search.search-block-button-expanded img[alt=close] {right: 5%;}
+  .homepage-photo {background: none; min-height: auto !important;}
+  .homepage-photo > div:first-child {
+    background-image: url("/sites/default/files/2021-02/rti-mda-tanzania-malaria-patient-50353823652_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 300px;
+  }
+  .homepage-photo .background-white-0 {background: none;}
+  .hero {height: 300px;}
+  #main>.row {padding: 1.5rem 0;}
+
+  h1 {font-size: 2rem;}
+  h2 {font-size: 1.6rem;}
+  h3 {font-size: 1.25rem;}
+  h4 {font-size: 1rem;}
+  h5 {font-size: 0.9rem;}
+
+}
+
+@media (max-width: 575.98px) {
+
+  #navbar-main {padding-top: 0;}
+  #block-topmenu {position: relative !important; margin: 0 auto;}
+  #block-topmenu .nav .nav-link {margin: 0 0.35rem;}
+  .navbar-brand:first-child img {width: 120px;}
+  .navbar-brand:last-child img {width: 100px;}
+
+  .field--name-body div.align-center, .field--name-body div.align-left, .field--name-body div.align-right, figure.align-right, figure.align-left {
+    max-width: none;
+    width: 100%;
+    margin: 0 0 1rem;
+  }
+
+}
