@@ -1,9 +1,14 @@
 {
   "name": "drupal/chisu",
-  "description": "CHISU Bootstrap 4 base theme.",
   "type": "drupal-custom-theme",
+  "description": "CHISU Bootstrap 4 base theme.",
+  "keywords": ["Drupal"],
   "license": "GPL-2.0-or-later",
-  "homepage": "https://www.drupal.org/project/bootstrap_barrio",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/nikathone/chisu/issues",
+    "source": "https://github.com/nikathone/chisu"
+  },
   "require": {
     "drupal/bootstrap_barrio": "^5.5"
   },
