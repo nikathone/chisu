@@ -1,33 +1,69 @@
-// Default variablesfooter
+// Default variables footer.
 @import "default-variables";
 
 // Bootstrap Framework.
-@import "../../../vendor/twbs/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
 
-// CHISU Color Palette
+:root {
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+  --color-black-10: #{$color-black-10};
+  --color-gray: #{$color-gray};
+  --color-gray-50: #{$color-gray-50};
+  --color-gray-25: #{$color-gray-25};
+  --color-dark-gray: #{$color-dark-gray};
+  --color-dark-gray-50: #{$color-dark-gray-50};
+  --color-sky-blue: #{$color-sky-blue};
+  --color-sky-blue-50: #{$color-sky-blue-50};
+  --color-blue: #{$color-blue};
+  --color-dark-blue: #{$color-dark-blue};
+  --color-blue-50: #{$color-blue-50};
+  --color-blue-25: #{$color-blue-25};
+  --color-green: #{$color-green};
+  --color-green-50: #{$color-green-50};
+  --color-green-25: #{$color-green-25};
+  --color-green-10: #{$color-green-10};
+  --color-tan: #{$color-tan};
+  --color-tan-75: #{$color-tan-75};
+  --color-tan-50: #{$color-tan-50};
+  --color-tan-25: #{$color-tan-25};
+  --color-brown: #{$color-brown};
+  --color-brown-85: #{$color-brown-85};
+  --color-red: #{$color-red};
+  --color-orange: #{$color-orange};
+  --color-yellow: #{$color-yellow};
+  --color-yellow-50: #{$color-yellow-50};
+}
+
+// CHISU Color Palette.
 
 .background-none {background: none !important;}
-.background-white {background-color: $color-white !important;}
-.text-white {color: $color-white !important;}
+.background-white {background-color: var(--color-white) !important;}
+.text-white {color: var(--color-white) !important;}
 .background-white-0 {background: rgba(255,255,255,0.92);}
-.background-black {background-color: $color-black !important;}
+.background-black {background-color: var(--color-black) !important;}
 .background-black-0 {background: rgba(55,67,75,0.7);}
-.text-black {color: $color-black !important;}
-.background-gray {background-color: $color-gray !important;}
-.background-dark-gray {background-color: $color-dark-gray !important;}
-.text-dark-gray {color: $color-dark-gray !important;}
-.background-sky-blue {background-color: $color-sky-blue !important;}
-.background-blue {background-color: $color-blue !important;}
-.background-blue-50 {background-color: $color-blue-50 !important;}
-.background-blue-25 {background-color: $color-blue-25 !important;}
-.text-blue {color: $color-blue !important;}
-.background-green {background-color: $color-green !important;}
-.background-green-50 {background-color: $color-green-50 !important;}
-.background-green-25 {background-color: $color-green-25 !important;}
-.background-brown {background-color: $color-brown !important;}
-.background-tan {background-color: $color-tan !important;}
-.background-tan-50 {background-color: $color-tan-50 !important;}
-.background-tan-25 {background-color: $color-tan-25 !important;}
+.text-black {color: var(--color-black) !important;}
+.background-gray {background-color: var(--color-gray) !important;}
+.background-dark-gray {background-color: var(--color-dark-gray) !important;}
+.text-dark-gray, .text-muted {color: var(--color-dark-gray) !important;}
+.background-sky-blue {background-color: var(--color-sky-blue) !important;}
+.background-blue {background-color: var(--color-blue) !important;}
+.background-blue-50 {background-color: var(--color-blue-50) !important;}
+.background-blue-25 {background-color: var(--color-blue-25) !important;}
+.text-blue {color: var(--color-blue) !important;}
+.background-green {background-color: var(--color-green) !important;}
+.background-green-50 {background-color: var(--color-green-50) !important;}
+.background-green-25 {background-color: var(--color-green-25) !important;}
+.background-brown {background-color: var(--color-brown) !important;}
+.background-tan {background-color: var(--color-tan) !important;}
+.background-tan-50 {background-color: var(--color-tan-50) !important;}
+.background-tan-25 {background-color: var(--color-tan-25) !important;}
+.background-yellow {background-color: var(--color-yellow) !important;}
+.background-yellow-50 {background-color: var(--color-yellow-50) !important;}
+.background-orange {background-color: var(--color-orange) !important;}
+.background-red {background-color: var(--color-red) !important;}
+.background-dark-blue {background-color: var(--color-dark-blue) !important; color: var(--color-white);}
 
 // Begin Other CSS
 
@@ -43,26 +79,26 @@ body {font-size: 1.071em;}
 .montserrat {font-family: $montserrat !important;}
 
 a, .leaflet-container a {
-  color: $color-brown;
+  color: var(--color-brown);
 }
 
 a:hover, a:focus {
-  color: $color-brown;
+  color: var(--color-brown);
 }
 
 .field--name-body a, .view-content a, .file a, .field--type-link a {
-  background: $color-green-10;
+  background: var(--color-green-10);
   padding-bottom: 0.15rem;
   text-decoration: underline;
-  text-decoration-color: $color-green-50;
+  text-decoration-color: var(--color-green-50);
 }
 
 .field--name-body a:hover, .view-content a:hover, .file a:hover, .field--type-link a:hover {
-  text-decoration-color: $color-brown;
+  text-decoration-color: var(--color-brown);
 }
 
 .field--name-body a.text-white:hover, .view-content a.text-white:hover, .file a.text-white:hover, .field--type-link a.text-white:hover {
-  text-decoration-color: $color-white;
+  text-decoration-color: var(--color-white);
 }
 
 .leaflet-control-zoom a {
@@ -90,7 +126,7 @@ svg.ext {
   width: 19px;
   height: 17px;
   padding-right: 0;
-  fill: $color-tan;
+  fill: var(--color-tan);
   margin-top: -10px;
   font-weight: 400;
   padding-left: 0.15rem;
@@ -107,15 +143,15 @@ h5 {font-size: 1rem;}
 .small, small {font-size: 85%;}
 
 .border-primary {
-  border-color: $color-tan-50 !important;
+  border-color: var(--color-tan-50) !important;
 }
 
 .border-secondary {
-  border-color: $color-blue-50 !important;
+  border-color: var(--color-blue-50) !important;
 }
 
 .border-light {
-  border-color: $color-green-50 !important;
+  border-color: var(--color-green-50) !important;
 }
 
 .rounded {
@@ -134,61 +170,61 @@ h5 {font-size: 1rem;}
 }
 
 .btn-primary {
-  background-color: $color-brown !important;
-  color: $color-white;
-  border-color: $color-brown;
+  background-color: var(--color-brown) !important;
+  color: var(--color-white);
+  border-color: var(--color-brown);
 }
 
 .btn-primary:hover, .btn-primary:focus {
-  background-color: $color-brown-85 !important;
-  color: $color-white;
-  border-color: $color-brown-85;
+  background-color: var(--color-brown-85) !important;
+  color: var(--color-white);
+  border-color: var(--color-brown-85);
 }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem $color-tan-50;
+  box-shadow: 0 0 0 0.2rem var(--color-tan-50);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem $color-tan-50;
-  background-color: $color-brown-85 !important;
-  color: $color-white;
-  border-color: $color-brown-85;
+  box-shadow: 0 0 0 0.2rem var(--color-tan-50);
+  background-color: var(--color-brown-85) !important;
+  color: var(--color-white);
+  border-color: var(--color-brown-85);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  background-color: $color-brown-85 !important;
-  color: $color-white;
-  border-color: $color-brown-85;
+  background-color: var(--color-brown-85) !important;
+  color: var(--color-white);
+  border-color: var(--color-brown-85);
 }
 
 .btn-light {
-  background-color: $color-green-25 !important;
-  color: $color-black;
-  border-color: $color-green-25;
+  background-color: var(--color-green-25) !important;
+  color: var(--color-black);
+  border-color: var(--color-green-25);
 }
 
 .btn-light:hover, .btn-light:focus {
-  background-color: $color-green-50 !important;
-  color: $color-black;
-  border-color: $color-green-50;
+  background-color: var(--color-green-50) !important;
+  color: var(--color-black);
+  border-color: var(--color-green-50);
 }
 
 .btn-light:focus {
-  box-shadow: 0 0 0 0.2rem $color-green-10;
+  box-shadow: 0 0 0 0.2rem var(--color-green-10);
 }
 
 .btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem $color-green-10;
-  background-color: $color-green-50 !important;
-  color: $color-black;
-  border-color: $color-green-50;
+  box-shadow: 0 0 0 0.2rem var(--color-green-10);
+  background-color: var(--color-green-50) !important;
+  color: var(--color-black);
+  border-color: var(--color-green-50);
 }
 
 .btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
-  background-color: $color-green-10 !important;
-  color: $color-black;
-  border-color: $color-green-50;
+  background-color: var(--color-green-10) !important;
+  color: var(--color-black);
+  border-color: var(--color-green-50);
 }
 
 .region-top-header {
@@ -201,7 +237,7 @@ h5 {font-size: 1rem;}
 }
 
 #block-topmenu .nav .nav-link {
-  color: $color-black;
+  color: var(--color-black);
   padding: 0.25rem 0;
   margin: 0 0.5rem;
   text-transform: uppercase;
@@ -216,7 +252,7 @@ h5 {font-size: 1rem;}
   font-family: $montserrat;
   font-weight: 500;
   font-size: 1rem;
-  color: $color-black;
+  color: var(--color-black);
 }
 
 #block-chisu-main-menu a.nav-link:hover, #block-chisu-main-menu a.nav-link:focus, #block-topmenu .nav .nav-link:hover, #block-topmenu .nav .nav-link:focus {
@@ -229,7 +265,7 @@ h5 {font-size: 1rem;}
   color: $color-blue;
   text-decoration: underline;
   text-underline-offset: 0.25rem;
-  text-decoration-color: $color-blue-50;
+  text-decoration-color: var(--color-blue-50);
 }
 
 #block-chisu-main-menu a.nav-link.active:hover, #block-topmenu .nav .nav-link.active:hover {
@@ -242,7 +278,7 @@ h5 {font-size: 1rem;}
   padding: 0;
   border-radius: 0;
   border-color: $color-gray-25;
-  background-color: $color-white;
+  background-color: var(--color-white);
   min-width: 200px;
 }
 
@@ -256,7 +292,7 @@ h5 {font-size: 1rem;}
 
 .dropdown-item a {
   padding: 0.5rem 1rem;
-  color: $color-black;
+  color: var(--color-black);
   font-size: 1rem;
   width: 100%;
   display: block;
@@ -264,13 +300,13 @@ h5 {font-size: 1rem;}
 
 .dropdown-item a:hover, .dropdown-item a:focus {
   background: $color-gray-25;
-  color: $color-black;
+  color: var(--color-black);
   text-decoration: none;
 }
 
 .dropdown-item a.is-active {
   color: $color-blue;
-  background: $color-white;
+  background: var(--color-white);
 }
 
 .dropdown-item.active, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover {
@@ -401,7 +437,7 @@ button.chisu-search {
 }
 
 .form-control:focus {
-  border-color: $color-tan;
+  border-color: var(--color-tan);
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(198,185,172,0.5);
 }
@@ -451,7 +487,7 @@ button.chisu-search {
 }
 
 .breadcrumb-item+.breadcrumb-item:before {
-  color: $color-tan-50;
+  color: var(--color-tan-50);
   content: ">";
   font-family: $variex;
   font-size: 85%;
@@ -474,7 +510,7 @@ img.image-style-resource-thumbnail {
 .caption > figcaption, .caption, .field--name-field-credit {
   font-size: 0.85rem;
   line-height: 1.35;
-  color: $color-dark-gray;
+  color: var(--color-dark-gray);
   clear: both;
 }
 
@@ -537,7 +573,7 @@ img.image-style-resource-thumbnail {
 #block-chisu-footer .nav a {
   margin-bottom: 0.5rem;
   padding: 0;
-  color: $color-black;
+  color: var(--color-black);
   font-family: $montserrat;
   font-weight: 500;
   font-size: 1rem;
@@ -604,18 +640,18 @@ em.placeholder {
 }
 
 .slick-dots li.slick-active button:before {
-  color: $color-white;
+  color: var(--color-white);
   opacity: 1;
   font-size: 1rem;
 }
 
 .slick-arrow:before, .slick-dots li button:before {
-  color: $color-green-25;
+  color: var(--color-green-25);
   opacity: 1;
 }
 
 .slick-arrow:hover:before, .slick-dots li button:hover:before {
-  color: $color-green-50;
+  color: var(--color-green-50);
 }
 
 .slick-track {
@@ -662,14 +698,14 @@ figure img {
 }
 
 .page-link {
-  color: $color-brown;
+  color: var(--color-brown);
   border: none;
   border-radius: 0;
 }
 
 .page-link:hover {
-  color: $color-brown;
-  background: $color-green-25;
+  color: var(--color-brown);
+  background: var(--color-green-25);
 }
 
 .page-link:focus {
@@ -677,9 +713,9 @@ figure img {
 }
 
 .page-item.active .page-link {
-  color: $color-black;
-  background: $color-tan-50;
-  border-color: $color-tan-50;
+  color: var(--color-black);
+  background: var(--color-tan-50);
+  border-color: var(--color-tan-50);
 }
 
 .views-exposed-form label {
@@ -734,7 +770,7 @@ figure img {
   .dropdown-menu {background: none; border: none; text-align: center;}
   .dropdown-menu .dropdown-item:last-child {margin-bottom: 0.5rem;}
   .dropdown-item a {color: $color-dark-gray;}
-  .dropdown-item a:focus, .dropdown-item a:hover {color: $color-black; background: none; text-decoration: underline; text-underline-offset: 0.25rem; outline: none;}
+  .dropdown-item a:focus, .dropdown-item a:hover {color: var(--color-black); background: none; text-decoration: underline; text-underline-offset: 0.25rem; outline: none;}
   .dropdown-item a.is-active {background: none;}
   .dropdown-item a.is-active:focus, .dropdown-item a.is-active:hover {outline: none; text-decoration: none; color: $color-blue;}
 

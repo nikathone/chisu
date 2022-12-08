@@ -10,7 +10,7 @@ const paths = {
     src: './scss/style.scss',
     dest: './css',
     watch: './scss/**/*.scss',
-    bootstrap: '../../../vendor/twbs/bootstrap/scss/bootstrap.scss',
+    bootstrap: './node_modules/bootstrap/scss/bootstrap.scss',
   }
 };
 

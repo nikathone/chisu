@@ -1,9 +1,9 @@
 name: CHISU
 type: theme
-description: 'The CHISU theme is a modified copy of the Bootstrap Barrio SubTheme.'
-core: 8.x
-core_version_requirement: ^8 || ^9
 base theme: bootstrap_barrio
+description: 'The CHISU theme is a modified copy of the Bootstrap Barrio SubTheme.'
+core_version_requirement: ^8 || ^9
+version: VERSION
 
 libraries:
   - chisu/bootstrap_cdn
@@ -32,8 +32,3 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
-
-# Information added by Drupal.org packaging script on 2020-10-25
-version: '5.1.4'
-project: 'bootstrap_barrio'
-datestamp: 1603660712
