@@ -6,8 +6,8 @@ core_version_requirement: ^8 || ^9
 version: VERSION
 
 libraries:
-  - chisu/bootstrap_cdn
   - chisu/global-styling
+  - chisu/bootstrap-js
 
 regions:
   top_header: 'Top header'
