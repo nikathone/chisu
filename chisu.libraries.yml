@@ -18,6 +18,7 @@ bootstrap-js:
   js:
     /libraries/bootstrap/dist/js/bootstrap.bundle.min.js: { minified: true }
     js/tooltips-init.js: {}
+    js/popover-init.js: {}
 
 bootstrap_cdn:
   js:
