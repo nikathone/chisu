@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Bootstrap Barrio's theme implementation for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+{% set attributes = attributes.addClass('site-branding navbar-brand d-flex') %}
+<div{{ attributes }}>
+  {% if site_logo %}
+    <div class="logo-wrapper d-flex align-items-center">
+      <a href="https://www.usaid.gov/" target="_blank" class="d-flex align-items-center me-3">
+        <img src="/themes/custom/chisu/images/logo-usaid.png" alt="USAID: From The American People" class="img-fluid" width="200" height="58" />
+      </a>
+      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="d-flex align-items-center">
+        <img src="{{ site_logo }}" alt="{{ 'CHISU: Country Health Information Systems and Data Use'|t }}" class="img-fluid" />
+      </a>
+    </div>
+  {% endif %}
+  {% if site_slogan or site_name %}
+    <div class="d-flex flex-column ms-3">
+      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="site-branding__name mb-1 text-decoration-none">
+        {{ site_name }}
+      </a>
+      <span class="site-branding__slogan fs-6 fw-light lh-1">{{ site_slogan }}</span>
+    </div>
+  {% endif %}
+</div>
