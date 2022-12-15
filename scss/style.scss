@@ -35,6 +35,9 @@
   --color-yellow-50: #{$color-yellow-50};
 }
 
+// Components
+@import "components/tables";
+
 // CHISU Color Palette.
 
 .background-none {background: none !important;}
