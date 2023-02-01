@@ -2,12 +2,12 @@
 
 ## ⚙️ Requirements
 
-### For CSS
+### For CSS development
 
 - [node ^v16.16.0](https://nodejs.org/en/download/)
 - [npm ^8.11.0](https://nodejs.org/en/download/)
 
-### For Drupal
+### For Drupal usage
 
 [Bootstrap barrio](https://www.drupal.org/project/bootstrap_barrio) should be
 pulled in by composer.
@@ -41,3 +41,4 @@ placed under libraries:
 
 - `npm run build`: To build the css artifacts.
 - `npm run watch`: To start developing and building the artifacts right away.
+- Push the changes to this repo
