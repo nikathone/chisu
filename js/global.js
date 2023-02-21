@@ -3,20 +3,23 @@
  * Global utilities.
  *
  */
-(function ($, Drupal) {
+(function (Drupal, once) {
 
   'use strict';
 
   Drupal.behaviors.chisu = {
-    attach: function (context, settings) {
-      let myButton = jQuery('#search-expand');
-      myButton.on('click', function () {
-        jQuery('#block-exposedformsearchpage-1').toggleClass('d-block');
-        myButton.toggleClass('search-block-button-expanded');
-        jQuery('input#edit-keys').focus();
-        console.log('clicked');
+    attach: function (context) {
+      once('search-button-init', '#search-expand', context).forEach(function (element) {
+        let myButton = document.getElementById('search-expand');
+        // Add event listener to the button detecting clicks.
+        myButton.addEventListener('click', function () {
+          document.getElementById('block-exposedformsearchpage-1').classList.toggle('d-block');
+          myButton.classList.toggle('search-block-button-expanded');
+          document.getElementById('CollapsingNavbar').querySelector('input[type=text]').focus();
+          console.log('clicked');
+        });
       });
     }
   };
 
-})(jQuery, Drupal);
+})(Drupal, once);
