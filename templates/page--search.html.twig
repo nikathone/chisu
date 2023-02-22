@@ -96,16 +96,25 @@
             {% if page.primary_menu or page.header_form %}
               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse justify-content-center" id="CollapsingNavbar">
+                {% if navbar_offcanvas %}
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                {% endif %}
                 {{ page.primary_menu }}
                 {% if page.header_form %}
                   <div class="form-inline navbar-form justify-content-end">
                     {{ page.header_form }}
                   </div>
                 {% endif %}
-	          </div>
+                {% if navbar_offcanvas %}
+                  </div>
+                {% endif %}
+	            </div>
             {% endif %}
             {% if sidebar_collapse %}
-              <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
+              <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
             {% endif %}
           {% if container_navbar %}
           </div>
@@ -129,7 +138,7 @@
         </div>
       {% endblock %}
     {% endif %}
-    <div id="main-wrapper" class="layout-main-wrapper clearfix">
+    <div id="main-wrapper" class="layout-main-wrapper clearfix flex-grow-1">
       {% block content %}
         <div id="main" class="{{ container }}">
           {{ page.breadcrumb }}
@@ -168,7 +177,7 @@
         </aside>
       </div>
     {% endif %}
-    <footer class="site-footer">
+    <footer class="site-footer flex-shrink-0 background-none">
       {% block footer %}
         <div class="{{ container }}">
           {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
