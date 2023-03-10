@@ -2,11 +2,12 @@
   "name": "chisu",
   "version": "1.0.0",
   "scripts": {
-    "build": "./node_modules/.bin/gulp",
+    "build": "cp ./node_modules/bootstrap-icons/font/fonts/* ./css/fonts && ./node_modules/.bin/gulp",
     "watch": "./node_modules/.bin/gulp watch"
   },
   "devDependencies": {
     "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-cli": "^2.3.0",

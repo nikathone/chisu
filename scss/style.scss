@@ -3,6 +3,8 @@
 
 // Bootstrap Framework.
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+// Bootstrap Fonts.
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
 :root {
   --color-white: #{$color-white};
