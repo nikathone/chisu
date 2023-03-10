@@ -22,7 +22,9 @@
   --color-blue-50: #{$color-blue-50};
   --color-blue-25: #{$color-blue-25};
   --color-green: #{$color-green};
+  --color-green-90: #{$color-green-90};
   --color-green-50: #{$color-green-50};
+  --color-green-40: #{$color-green-40};
   --color-green-25: #{$color-green-25};
   --color-green-10: #{$color-green-10};
   --color-tan: #{$color-tan};
@@ -57,6 +59,7 @@
 .background-blue-25 {background-color: var(--color-blue-25) !important;}
 .text-blue {color: var(--color-blue) !important;}
 .background-green {background-color: var(--color-green) !important;}
+.background-green-90 {background-color: var(--color-green-90) !important;}
 .background-green-50 {background-color: var(--color-green-50) !important;}
 .background-green-40 {background-color: var(--color-green-40) !important;}
 .background-green-25 {background-color: var(--color-green-25) !important;}
@@ -316,10 +319,6 @@ h5 {font-size: 1rem;}
   background-color: var(--color-white);
   min-width: 200px;
 }
-
-//.dropdown-menu:nth-child(2) {
-//  width: 280px;
-//}
 
 .dropdown-item {
   padding: 0;
@@ -810,6 +809,7 @@ figure img {
 
 @media (min-width: 1199.99px) {
 
+  .nav-link--where-we-work.has-submenu + ul {column-count: 2; column-gap: 0;}
   .dropdown:hover .dropdown-menu {display: block;}
   .navbar-expand-xl .navbar-nav .nav-link {padding-right: 0.75rem; padding-left: 0.75rem;}
   .dropdown-item a {white-space: nowrap;}
