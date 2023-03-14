@@ -707,6 +707,15 @@ em.placeholder {
   align-items: center;
 }
 
+.slick__slide img {
+  max-height: 300px;
+  width: auto;
+}
+
+.slick__arrow {
+  z-index: 0;
+}
+
 .node figure .field--type-image {
   float: none;
 }
