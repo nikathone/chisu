@@ -790,6 +790,15 @@ figure img {
   font-size: 85%;
 }
 
+.node--type-basic-page-full-width .main-content.col > .section {
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.node--type-basic-page-full-width .node__content {
+  margin-top: 0;
+}
+
 // Components
 @import "components/tables";
 
