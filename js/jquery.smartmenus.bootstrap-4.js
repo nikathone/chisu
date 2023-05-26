@@ -1,13 +1,13 @@
-/*!
- * SmartMenus jQuery Plugin Bootstrap 4 Addon - v0.1.0 - July 23, 2020
+/**
+ * SmartMenus jQuery Bootstrap 4 Addon - v0.1.1
  * http://www.smartmenus.org/
  *
  * Copyright Vasil Dinkov, Vadikom Web Ltd.
- * http://vadikom.com
+ * http://vadikom.com/
  *
- * Licensed MIT
+ * Released under the MIT license:
+ * http://www.opensource.org/licenses/MIT
  */
-
 (function(factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD
@@ -151,7 +151,7 @@
 				$(document).off('keydown.bs.dropdown.data-api', '.dropdown-menu');
 				// restore BS keydown handler for dropdowns that are not inside SmartMenus navbars
 				// SmartMenus won't add the "show" class so it's handy here
-				if ($.fn.dropdown && $.fn.dropdown.Constructor) {
+				if ($.fn.dropdown && $.fn.dropdown.Constructor && typeof $.fn.dropdown.Constructor._dataApiKeydownHandler == 'function') {
 					$(document).on('keydown.bs.dropdown.data-api', '.dropdown-menu.show', $.fn.dropdown.Constructor._dataApiKeydownHandler);
 				}
 				$.SmartMenus.Bootstrap.keydownFix = true;
