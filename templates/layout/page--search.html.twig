@@ -94,7 +94,7 @@
           {% endif %}
             {{ page.header }}
             {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-bs-toggle="{{ navbar_collapse_btn_data }}" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="{{ navbar_collapse_btn_data }}" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse justify-content-center" id="CollapsingNavbar">
                 {% if navbar_offcanvas %}
                   <div class="offcanvas-header">
@@ -142,18 +142,11 @@
       {% block content %}
         <div id="main" class="{{ container }}">
           {{ page.breadcrumb }}
-          {% if node.field_hero.value %}
-            <div class="row background-white-o pb-2">
-              <h1 class="js-quickedit-page-title title col">{{ node.getTitle() }}</h1>
-            </div>
-            <div class="hero row align-items-end py-0 position-relative" style="background-image: url('{{ file_url(node.field_hero.entity.field_media_image.entity.fileuri) }}');" aria-label="{{ node.field_hero.entity.field_media_image.alt }}">
-              <div class="position-absolute caption pe-1 text-end">{{ node.field_hero.entity.field_credit.0.value|striptags }}</div>
-            </div>
-          {% endif %}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
               <main{{ content_attributes }}>
                 <section class="section">
                   <a id="main-content" tabindex="-1"></a>
+                  <h1 class="js-quickedit-page-title title">Search Results for "{{ get.keys }}"</h1>
                   {{ page.content }}
                 </section>
               </main>
@@ -177,14 +170,14 @@
     </div>
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
       <div class="featured-bottom">
-        <aside class="{{ container }} clearfix" role="complementary">
+        <aside class="container-fluid clearfix" role="complementary">
           {{ page.featured_bottom_first }}
           {{ page.featured_bottom_second }}
           {{ page.featured_bottom_third }}
         </aside>
       </div>
     {% endif %}
-    <footer class="site-footer flex-shrink-0 background-none">
+    <footer class="site-footer flex-shrink-0 background-dark-blue">
       {% block footer %}
         <div class="{{ container }}">
           {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
