@@ -843,6 +843,10 @@ figure img {
   background-color: var(--color-blue);
 }
 
+.bar-top-sky-blue:before {
+  background-color: var(--color-sky-blue);
+}
+
 // Components
 @import "components/tables";
 
