@@ -19,6 +19,7 @@
   --color-sky-blue-50: #{$color-sky-blue-50};
   --color-blue: #{$color-blue};
   --color-dark-blue: #{$color-dark-blue};
+  --color-dark-blue-75: #{$color-dark-blue-75};
   --color-blue-50: #{$color-blue-50};
   --color-blue-25: #{$color-blue-25};
   --color-green: #{$color-green};
@@ -73,6 +74,7 @@
 .background-orange {background-color: var(--color-orange) !important;}
 .background-red {background-color: var(--color-red) !important;}
 .background-dark-blue {background-color: var(--color-dark-blue) !important; color: var(--color-white);}
+.text-dark-blue {color: var(--color-dark-blue) !important;}
 
 // Begin Other CSS
 
@@ -80,23 +82,17 @@ html, body, .mm-page, .dialog-off-canvas-main-canvas, #page-wrapper, #page { // 
   height: 100%;
 }
 
-body {
-  background-image: linear-gradient(40deg, rgba(85, 165, 90,0.2) 0%, rgba(85, 165, 90,0.1) 13%,transparent 13%, transparent 82%,rgba(44, 160, 195,0.1) 80%, rgba(44, 160, 195,0.15) 100%),linear-gradient(30deg, rgba(198, 185, 172,0.1) 0%, rgba(198, 185, 172,0.1) 36%,transparent 36%, transparent 77%,rgba(198, 185, 172,0.1) 77%, rgba(123, 105, 87,0.1) 100%),linear-gradient(310deg, rgba(83, 147, 206,0.2) 0%, rgba(83, 147, 206,0.1) 15%,transparent 2%, transparent 12%,rgba(255, 255, 255,0.1) 12%, rgba(255, 255, 255,0.1) 100%),linear-gradient(55deg, rgba(198, 185, 172,0.1) 0%, rgba(198, 185, 172,0.1) 23%,transparent 18%, transparent 65%,rgba(123, 105, 87,0.05) 55%, rgba(123, 105, 87,0.05) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255)); min-height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-body, .site-footer {font-family: $gill-sans;}
+body, .site-footer {font-family: $montserrat;}
 body {font-size: 1.071em;}
 .variex {font-family: $variex !important;}
 .montserrat {font-family: $montserrat !important;}
 
 a, .leaflet-container a {
-  color: var(--color-brown);
+  color: var(--color-green);
 }
 
 a:hover, a:focus {
-  color: var(--color-brown);
+  color: var(--color-green-90);
 }
 
 .field--name-body a, .view-content a, .file a, .field--type-link a {
@@ -107,7 +103,7 @@ a:hover, a:focus {
 }
 
 .field--name-body a:hover, .view-content a:hover, .file a:hover, .field--type-link a:hover {
-  text-decoration-color: var(--color-brown);
+  text-decoration-color: var(--color-green);
 }
 
 .field--name-body a.text-white:hover, .view-content a.text-white:hover, .file a.text-white:hover, .field--type-link a.text-white:hover {
@@ -193,39 +189,39 @@ h5 {font-size: 1rem;}
 }
 
 .btn, a.btn {
-  border-radius: 0.1rem;
+  border-radius: 3px;
   text-decoration: none !important;
   padding: .375rem .75rem;
 
 }
 
 .btn-primary {
-  background-color: var(--color-brown) !important;
+  background-color: var(--color-green) !important;
   color: var(--color-white);
-  border-color: var(--color-brown);
+  border-color: var(--color-green);
 }
 
 .btn-primary:hover, .btn-primary:focus {
-  background-color: var(--color-brown-85) !important;
+  background-color: var(--color-green-90) !important;
   color: var(--color-white);
-  border-color: var(--color-brown-85);
+  border-color: var(--color-green-90);
 }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem var(--color-tan-50);
+  box-shadow: 0 0 0 0.2rem var(--color-green-50);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--color-tan-50);
-  background-color: var(--color-brown-85) !important;
+  box-shadow: 0 0 0 0.2rem var(--color-green-50);
+  background-color: var(--color-green-90) !important;
   color: var(--color-white);
-  border-color: var(--color-brown-85);
+  border-color: var(--color-green-90);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  background-color: var(--color-brown-85) !important;
+  background-color: var(--color-green-90) !important;
   color: var(--color-white);
-  border-color: var(--color-brown-85);
+  border-color: var(--color-green-90);
 }
 
 .btn-light {
@@ -467,14 +463,17 @@ button.chisu-search {
   box-shadow: none;
 }
 
-.form-control, .form-select {
+.form-control {
+  border: 0 none var(--color-green);
+  border-bottom: 3px solid var(--color-green);
   border-radius: 0;
+  padding-bottom: calc(0.375rem - 3px);
 }
 
 .form-control:focus, .form-select:focus {
-  border-color: var(--color-tan);
+  border-color: var(--color-green-50);
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(198,185,172,0.5);
+  box-shadow: none;
 }
 
 .form-actions {
@@ -625,7 +624,7 @@ img.image-style-resource-thumbnail {
 #block-chisu-footer .nav a {
   margin-bottom: 0.5rem;
   padding: 0;
-  color: var(--color-black);
+  color: var(--color-white);
   font-family: $montserrat;
   font-weight: 500;
   font-size: 1rem;
@@ -801,6 +800,47 @@ figure img {
 
 .node--type-basic-page-full-width .node__content {
   margin-top: 0;
+}
+
+// Redesign additions
+
+.background-mb {
+  background-image: url(/themes/custom/chisu/images/bg-circuit-board-white.svg);
+  background-size: 50%;
+  background-position: 50px 100px;
+  background-attachment: fixed;
+}
+
+.background-sky-blue.background-mb {
+  background-image: url(/themes/custom/chisu/images/bg-circuit-board-gray-blue.svg);
+}
+
+.background-tan.background-mb {
+  background-image: url(/themes/custom/chisu/images/bg-circuit-board-tan-75.svg);
+}
+
+.background-green-white {
+  background-image: linear-gradient(180deg, var(--color-green-50), var(--color-white));
+}
+
+.white-boxes .block {
+  background: var(--color-white);
+  padding: 2rem 1.5rem;
+  flex-grow: 1;
+}
+
+.bar-top:before {
+  width: 200px;
+  height: 5px;
+  background-color: var(--color-white);
+  display: block;
+  margin-bottom: 0.75rem;
+  content: "";
+  max-width: 100%;
+}
+
+.bar-top-blue:before {
+  background-color: var(--color-blue);
 }
 
 // Components
