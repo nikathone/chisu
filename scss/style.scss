@@ -830,13 +830,17 @@ figure img {
 }
 
 .bar-top:before {
-  width: 200px;
+  width: 150px;
   height: 5px;
   background-color: var(--color-white);
   display: block;
   margin-bottom: 0.75rem;
   content: "";
   max-width: 100%;
+}
+
+.bar-top-double {
+  margin-bottom: 1.5rem;
 }
 
 .bar-top-blue:before {
