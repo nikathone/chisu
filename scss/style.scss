@@ -644,12 +644,10 @@ img.image-style-resource-thumbnail {
 
 // Content
 
-.homepage-photo {
-  background-image: url("/sites/default/files/2021-02/rti-mda-tanzania-malaria-patient-50353823652_1.jpg");
-  background-repeat: no-repeat;
+.homepage-promoted-img {
   background-size: cover;
-  background-position: right 45%;
-  min-height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .block-field-blocknodearticlefield-date, .block-field-blocknodenewsfield-date {
@@ -931,17 +929,8 @@ figure img {
 
   #views-exposed-form-search-page-1 input {width: 90%; margin-left: 5%;}
   .chisu-search.search-block-button-expanded img[alt=close] {right: 5%;}
-  .homepage-photo {background: none; min-height: auto !important;}
-  .homepage-photo > div:first-child {
-    background-image: url("/sites/default/files/2021-02/rti-mda-tanzania-malaria-patient-50353823652_1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right center;
-    height: 300px;
-  }
-  .homepage-photo .background-white-0 {background: none;}
-  .hero {height: 300px;}
-  #main>.row {padding: 1.5rem 0;}
+
+  .homepage-promoted-img {height: 350px;}
 
   h1 {font-size: 2rem;}
   h2 {font-size: 1.6rem;}
@@ -958,6 +947,8 @@ figure img {
   #block-topmenu .nav .nav-link {margin: 0 0.35rem;}
   .navbar-brand:first-child img {width: 120px;}
   .navbar-brand:last-child img {width: 100px;}
+
+  .homepage-promoted-img {height: 250px;}
 
   .field--name-body div.align-center, .field--name-body div.align-left, .field--name-body div.align-right, figure.align-right, figure.align-left {
     max-width: none;
