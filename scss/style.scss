@@ -17,9 +17,10 @@
   --color-dark-gray-50: #{$color-dark-gray-50};
   --color-sky-blue: #{$color-sky-blue};
   --color-sky-blue-50: #{$color-sky-blue-50};
-  --color-blue: #{$color-blue};
   --color-dark-blue: #{$color-dark-blue};
   --color-dark-blue-75: #{$color-dark-blue-75};
+  --color-blue: #{$color-blue};
+  --color-blue-90: #{$color-blue-90};
   --color-blue-50: #{$color-blue-50};
   --color-blue-25: #{$color-blue-25};
   --color-blue-10: #{$color-blue-10};
@@ -233,7 +234,7 @@ h5 {font-size: 1rem;}
 }
 
 .btn-secondary:hover, .btn-secondary:focus {
-  background-color: var(--color-dark-blue-75) !important;
+  background-color: var(--color-blue-90) !important;
   color: var(--color-white);
   border-color: var(--color-dark-blue-75);
 }
@@ -244,15 +245,15 @@ h5 {font-size: 1rem;}
 
 .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem var(--color-blue-25);
-  background-color: var(--color-dark-blue-75) !important;
+  background-color: var(--color-blue-90) !important;
   color: var(--color-white);
-  border-color: var(--color-dark-blue-75);
+  border-color: var(--color-blue-90);
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-  background-color: var(--color-dark-blue-75) !important;
+  background-color: var(--color-blue-90) !important;
   color: var(--color-white);
-  border-color: var(--color-dark-blue-75);
+  border-color: var(--color-blue-90);
 }
 
 .btn-light {
