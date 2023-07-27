@@ -22,7 +22,7 @@
   --color-dark-blue-75: #{$color-dark-blue-75};
   --color-blue-50: #{$color-blue-50};
   --color-blue-25: #{$color-blue-25};
-  --color-blue-15: #{$color-blue-15};
+  --color-blue-10: #{$color-blue-10};
   --color-green: #{$color-green};
   --color-green-90: #{$color-green-90};
   --color-green-50: #{$color-green-50};
@@ -59,7 +59,7 @@
 .background-blue {background-color: var(--color-blue) !important;}
 .background-blue-50 {background-color: var(--color-blue-50) !important;}
 .background-blue-25 {background-color: var(--color-blue-25) !important;}
-.background-blue-15 {background-color: var(--color-blue-15) !important;}
+.background-blue-10 {background-color: var(--color-blue-10) !important;}
 .text-blue {color: var(--color-blue) !important;}
 .background-green {background-color: var(--color-green) !important;}
 .background-green-90 {background-color: var(--color-green-90) !important;}
@@ -85,7 +85,7 @@ html, body, .mm-page, .dialog-off-canvas-main-canvas, #page-wrapper, #page { // 
 }
 
 body, .site-footer {font-family: $montserrat;}
-body {font-size: 1.071em;}
+body {font-size: 1.071em; overflow-x: hidden;}
 .variex {font-family: $variex !important;}
 .montserrat {font-family: $montserrat !important;}
 
@@ -98,7 +98,7 @@ a:hover, a:focus {
 }
 
 .field--name-body a, .view-content a, .file a, .field--type-link a {
-  background: var(--color-blue-15);
+  background: var(--color-blue-10);
   padding-bottom: 0.15rem;
   text-decoration: underline;
   text-decoration-color: var(--color-blue-50);
@@ -463,6 +463,7 @@ h5 {font-size: 1rem;}
   margin-left: 25%;
   font-size: 1.75rem;
   border: none;
+  padding-left: 0.75rem;
 }
 
 button.chisu-search {

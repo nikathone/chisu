@@ -68,29 +68,23 @@
   </div>
   <div class="col-12 col-md-7 col-lg-8 col-xl-7 py-3">
     {% if node.field_external_blog.value == "1" %}
-      <p class="fw-bold text-black bar-top bar-top-sky-blue mb-2">{{ label }}</p>
-      <p class="mb-2 small text-dark-gray">{{ content.field_date|render|striptags }}</p>
+      <p class="lead fw-bold text-black bar-top bar-top-sky-blue mb-2">{{ label }}</p>
     {% else %}
-      <p class="fw-bold text-black mb-2 bar-top bar-top-sky-blue mb-2">{{ label }}</p>
-      {% if content.field_date|render %}<p class="mb-2 small text-dark-gray">{{ content.field_date|render|striptags }}</p>{% endif %}
-      {% if content.field_publication_date|render %}<p class="mb-2 small text-dark-gray">{{ content.field_publication_date|render|striptags }}</p>{% endif %}
+      <p class="lead fw-bold text-black mb-2 bar-top bar-top-sky-blue mb-2">{{ label }}</p>
     {% endif %}
   </div>
   <div class="col-12 pb-3">
-    <p class="mb-0">{{ content.body|render|striptags }} <a href="{{ url }}" class="text-nowrap"><strong>Read more ›</strong></a></p>
+    <p class="mb-0 small">{{ content.body|render|striptags }} <a href="{{ url }}" class="text-nowrap"><strong>Read more ›</strong></a></p>
   </div>
   </div>
 {% else %}
   <div class="background-white pt-2 pb-3 px-3">
     {% if node.field_external_blog.value == "1" %}
-      <p class="fw-bold text-black my-2 bar-top bar-top-sky-blue">{{ label }}</p>
-      <p class="text-dark-gray mb-2 small">{{ content.field_date|render|striptags }}</p>
-      <p class="mb-0">{{ content.body|render|striptags }} <a href="{{ content.field_link_external }}" target="_blank" class="text-nowrap"><strong>Read more ›</strong></a></p>
+      <p class="lead fw-bold text-black my-2 bar-top bar-top-sky-blue">{{ label }}</p>
+      <p class="mb-0 small">{{ content.body|render|striptags }} <a href="{{ content.field_link_external }}" target="_blank" class="text-nowrap"><strong>Read more ›</strong></a></p>
     {% else %}
-      <p class="fw-bold text-black my-2 bar-top bar-top-sky-blue">{{ label }}</p>
-      {% if content.field_date|render %}<p class="text-dark-gray mb-2 small">{{ content.field_date|render|striptags }}</p>{% endif %}
-      {% if content.field_publication_date|render %}<p class="text-dark-gray mb-2 small"{{ content.field_publication_date|render|striptags }}</p>{% endif %}
-      <p class="mb-0">{{ content.body|render|striptags }} <a href="{{ url }}" class="text-nowrap"><strong>Read more ›</strong></a></p>
+      <p class="lead fw-bold text-black my-2 bar-top bar-top-sky-blue">{{ label }}</p>
+      <p class="mb-0 small">{{ content.body|render|striptags }} <a href="{{ url }}" class="text-nowrap"><strong>Read more ›</strong></a></p>
     {% endif %}
   </div>
 {% endif %}
