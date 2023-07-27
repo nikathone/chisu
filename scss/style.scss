@@ -191,7 +191,7 @@ h5 {font-size: 1rem;}
 }
 
 .btn, a.btn {
-  border-radius: 3px;
+  border-radius: 0.1rem;
   text-decoration: none !important;
   padding: .375rem .75rem;
 
@@ -224,6 +224,35 @@ h5 {font-size: 1rem;}
   background-color: var(--color-green-90) !important;
   color: var(--color-white);
   border-color: var(--color-green-90);
+}
+
+.btn-secondary {
+  background-color: var(--color-blue) !important;
+  color: var(--color-white);
+  border-color: var(--color-blue);
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--color-dark-blue-75) !important;
+  color: var(--color-white);
+  border-color: var(--color-dark-blue-75);
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem var(--color-blue-25);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem var(--color-blue-25);
+  background-color: var(--color-dark-blue-75) !important;
+  color: var(--color-white);
+  border-color: var(--color-dark-blue-75);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  background-color: var(--color-dark-blue-75) !important;
+  color: var(--color-white);
+  border-color: var(--color-dark-blue-75);
 }
 
 .btn-light {
