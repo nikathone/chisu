@@ -22,6 +22,7 @@
   --color-dark-blue-75: #{$color-dark-blue-75};
   --color-blue-50: #{$color-blue-50};
   --color-blue-25: #{$color-blue-25};
+  --color-blue-15: #{$color-blue-15};
   --color-green: #{$color-green};
   --color-green-90: #{$color-green-90};
   --color-green-50: #{$color-green-50};
@@ -58,6 +59,7 @@
 .background-blue {background-color: var(--color-blue) !important;}
 .background-blue-50 {background-color: var(--color-blue-50) !important;}
 .background-blue-25 {background-color: var(--color-blue-25) !important;}
+.background-blue-15 {background-color: var(--color-blue-15) !important;}
 .text-blue {color: var(--color-blue) !important;}
 .background-green {background-color: var(--color-green) !important;}
 .background-green-90 {background-color: var(--color-green-90) !important;}
@@ -88,22 +90,22 @@ body {font-size: 1.071em;}
 .montserrat {font-family: $montserrat !important;}
 
 a, .leaflet-container a {
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 
 a:hover, a:focus {
-  color: var(--color-green-90);
+  color: var(--color-blue);
 }
 
 .field--name-body a, .view-content a, .file a, .field--type-link a {
-  background: var(--color-green-10);
+  background: var(--color-blue-15);
   padding-bottom: 0.15rem;
   text-decoration: underline;
-  text-decoration-color: var(--color-green-50);
+  text-decoration-color: var(--color-blue-50);
 }
 
 .field--name-body a:hover, .view-content a:hover, .file a:hover, .field--type-link a:hover {
-  text-decoration-color: var(--color-green);
+  text-decoration-color: var(--color-blue);
 }
 
 .field--name-body a.text-white:hover, .view-content a.text-white:hover, .file a.text-white:hover, .field--type-link a.text-white:hover {
@@ -468,6 +470,11 @@ button.chisu-search {
   border-bottom: 3px solid var(--color-green);
   border-radius: 0;
   padding-bottom: calc(0.375rem - 3px);
+  padding-left: 0;
+}
+
+.form-select {
+  border-radius: 0;
 }
 
 .form-control:focus, .form-select:focus {
