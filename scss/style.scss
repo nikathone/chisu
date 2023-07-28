@@ -870,13 +870,9 @@ figure img {
   height: 5px;
   background-color: var(--color-white);
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5em;
   content: "";
   max-width: 100%;
-}
-
-.bar-top-double:before {
-  margin-bottom: 1.5rem;
 }
 
 .bar-top-blue:before {
