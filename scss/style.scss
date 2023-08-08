@@ -686,6 +686,7 @@ img.image-style-resource-thumbnail {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  border-radius: 0.25rem 0 0 0.25rem;
 }
 
 .block-field-blocknodearticlefield-date, .block-field-blocknodenewsfield-date {
@@ -863,6 +864,7 @@ figure img {
   background: var(--color-white);
   padding: 2rem 1.5rem;
   flex-grow: 1;
+  border-radius: 0.25rem;
 }
 
 .bar-top:before {
