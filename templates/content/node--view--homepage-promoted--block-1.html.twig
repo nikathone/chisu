@@ -62,23 +62,17 @@
 {{ attach_library('bootstrap_barrio/node') }}
 
 {% if content.field_image|render %}
-  <div class="row align-items-stretch background-white container mx-auto px-0">
-    <div class="col-12 col-md-5 col-lg-4 col-xl-5 d-flex px-0 pb-3">
+  <div class="row align-items-stretch background-white container mx-auto px-0 rounded-1">
+    <div class="col-12 col-md-5 col-lg-4 col-xl-5 d-flex px-0">
       <div class="homepage-promoted-img text-dark-gray p-1 background-white small d-flex align-self-stretch flex-grow-1" style="background-image: url('{{ node.field_image.entity.uri.value | image_style('extra_large') }}');"> </div>
   </div>
   <div class="col-12 col-md-7 col-lg-8 col-xl-7 py-3">
-    {% if node.field_external_blog.value == "1" %}
       <p class="lead fw-bold text-black bar-top bar-top-sky-blue mb-2">{{ label }}</p>
-    {% else %}
-      <p class="lead fw-bold text-black mb-2 bar-top bar-top-sky-blue mb-2">{{ label }}</p>
-    {% endif %}
-  </div>
-  <div class="col-12 pb-3">
-    <p class="mb-0 small">{{ content.body|render|striptags }} <a href="{{ url }}" class="text-nowrap"><strong>Read more ›</strong></a></p>
+      <p class="small">{{ content.body|render|striptags }} <a href="{{ url }}" class="text-nowrap"><strong>Read more ›</strong></a></p>
   </div>
   </div>
 {% else %}
-  <div class="background-white pt-2 pb-3 px-3">
+  <div class="background-white pt-2 pb-3 px-3 rounded-1">
     {% if node.field_external_blog.value == "1" %}
       <p class="lead fw-bold text-black my-2 bar-top bar-top-sky-blue">{{ label }}</p>
       <p class="mb-0 small">{{ content.body|render|striptags }} <a href="{{ content.field_link_external }}" target="_blank" class="text-nowrap"><strong>Read more ›</strong></a></p>
