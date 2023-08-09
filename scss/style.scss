@@ -571,7 +571,6 @@ form .form-actions {
   border: none;
   border-radius: 0;
   font-size: 85%;
-  margin-left: 1.5rem;
   margin-bottom: 0.25rem;
 }
 
@@ -581,6 +580,19 @@ form .form-actions {
   font-family: $variex;
   font-size: 85%;
   margin-top: 3px;
+}
+
+.page-vocabulary-countries .breadcrumb a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.page-vocabulary-countries .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.page-vocabulary-countries .breadcrumb-item + .breadcrumb-item:before {
+  color: var(--color-white);
 }
 
 .node .field--type-image, .field--type-image img {
@@ -612,11 +624,11 @@ img.image-style-resource-thumbnail {
   box-shadow: none !important;
 }
 
-#main>.row {
+/*#main>.row {
   background: rgba(255,255,255,.7);
   padding: 1.5rem;
   border-radius: 0.1rem;
-}
+}*/
 
 .content li {
   margin-bottom: 0.5rem;
@@ -939,7 +951,6 @@ figure img {
 
   #block-chisu-main-menu .navbar-nav {text-align: center; margin-top: 0.75rem;}
   #views-exposed-form-search-page-1 input {font-size: 1.25rem;}
-  #block-chisu-breadcrumbs .breadcrumb {margin-left: 0;}
   .hero {height: 400px;}
 
 }
