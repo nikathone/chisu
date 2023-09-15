@@ -62,7 +62,7 @@
     </div>
   {% else %}
     {% for item in items %}
-      <div style="background-image:url('{{ item.content }}');" class="d-none d-xl-block countries-map-image h-100"></div>
+      <div style="background-image:url('{{ item.content }}');" class="d-none d-xl-block countries-map-image h-100" title="Map with country highlighted"></div>
     {% endfor %}
   {% endif %}
 {% else %}
