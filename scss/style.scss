@@ -897,6 +897,12 @@ figure img {
   background-color: var(--color-sky-blue);
 }
 
+.countries-map-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+}
+
 // Components
 @import "components/tables";
 
