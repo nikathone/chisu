@@ -146,7 +146,7 @@
             <div class="row background-white-o pb-2">
               <h1 class="js-quickedit-page-title title col">{{ node.getTitle() }}</h1>
             </div>
-            <div class="hero row align-items-end py-0 position-relative" style="background-image: url('{{ file_url(node.field_hero.entity.field_media_image.entity.fileuri) }}');" aria-label="{{ node.field_hero.entity.field_media_image.alt }}">
+            <div class="hero row mb-4 align-items-end py-0 position-relative" style="background-image: url('{{ file_url(node.field_hero.entity.field_media_image.entity.fileuri) }}');" aria-label="{{ node.field_hero.entity.field_media_image.alt }}">
               <div class="position-absolute caption pe-1 text-end">{{ node.field_hero.entity.field_credit.0.value|striptags }}</div>
             </div>
           {% endif %}
