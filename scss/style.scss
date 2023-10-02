@@ -903,6 +903,15 @@ figure img {
   background-position: center left;
 }
 
+.block-field-blocktaxonomy-termcountriesfield-country-profile-pdf .file {
+  background: none;
+  padding: 0;
+}
+
+.block-field-blocktaxonomy-termcountriesfield-country-profile-pdf .file a {
+  font-weight: bold;
+}
+
 // Components
 @import "components/tables";
 
