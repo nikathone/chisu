@@ -1,13 +1,13 @@
 /**
- * SmartMenus jQuery Bootstrap 4 Addon - v0.1.1
+ * SmartMenus jQuery Plugin Bootstrap 4 Addon - v0.1.0 - July 23, 2020
  * http://www.smartmenus.org/
  *
  * Copyright Vasil Dinkov, Vadikom Web Ltd.
- * http://vadikom.com/
+ * http://vadikom.com
  *
- * Released under the MIT license:
- * http://www.opensource.org/licenses/MIT
+ * Licensed MIT
  */
+
 (function(factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD
