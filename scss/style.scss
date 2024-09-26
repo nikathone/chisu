@@ -912,6 +912,12 @@ figure img {
   font-weight: bold;
 }
 
+.form-textarea-wrapper {
+  border-left: 1px solid #ced4da;
+  border-right: 1px solid #ced4da;
+  border-top: 1px solid #ced4da;
+}
+
 // Components
 @import "components/tables";
 
