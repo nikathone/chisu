@@ -918,6 +918,21 @@ figure img {
   border-top: 1px solid #ced4da;
 }
 
+// Media
+
+.field--name-field-media-oembed-video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.field--name-field-media-oembed-video > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 // Components
 @import "components/tables";
 
