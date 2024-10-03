@@ -2,27 +2,31 @@
   tr th, thead th {
     background-color: var(--color-blue);
   }
+thead tr + tr th {
+    background-color: var(--color-dark-gray-15);
+    color: var(--color-black);
+  }
   tr {
     background: none;
   }
 }
 
 .table > :not(caption) > * > * {
-  background-color: $color-dark-gray-10;
+  background-color: var(--color-dark-gray-5);
   box-shadow: none;
 }
 
 .table-striped > :not(caption) > * > * {
-  background-color: $color-dark-gray-20;
+  background-color: var(--color-dark-gray-15);
   box-shadow: none;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) > * {
-  background-color: $color-dark-gray-5;
+  background-color: var(--color-dark-gray-5);
   box-shadow: none;
 }
 
 .table-hover > tbody > tr:hover > * {
-  background-color: $color-blue-25;
+  background-color: var(--color-blue-25);
   box-shadow: none;
 }

@@ -13,8 +13,13 @@
   --color-gray: #{$color-gray};
   --color-gray-50: #{$color-gray-50};
   --color-gray-25: #{$color-gray-25};
+  --color-gray-10: #{$color-gray-10};
   --color-dark-gray: #{$color-dark-gray};
   --color-dark-gray-50: #{$color-dark-gray-50};
+  --color-dark-gray-20: #{$color-dark-gray-20};
+  --color-dark-gray-15: #{$color-dark-gray-15};
+  --color-dark-gray-10: #{$color-dark-gray-10};
+  --color-dark-gray-5: #{$color-dark-gray-5};
   --color-sky-blue: #{$color-sky-blue};
   --color-sky-blue-50: #{$color-sky-blue-50};
   --color-dark-blue: #{$color-dark-blue};
@@ -76,7 +81,7 @@
 .background-yellow-50 {background-color: var(--color-yellow-50) !important;}
 .background-orange {background-color: var(--color-orange) !important;}
 .background-red {background-color: var(--color-red) !important;}
-.background-dark-blue {background-color: var(--color-dark-blue) !important; color: var(--color-white);}
+.background-dark-blue {background-color: var(--color-dark-blue) !important;}
 .text-dark-blue {color: var(--color-dark-blue) !important;}
 
 // Begin Other CSS
