@@ -2,7 +2,7 @@ name: CHISU
 type: theme
 base theme: bootstrap_barrio
 description: 'The CHISU theme is a modified copy of the Bootstrap Barrio SubTheme.'
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^8 || ^9 || ^10 || ^11
 version: VERSION
 
 libraries:
